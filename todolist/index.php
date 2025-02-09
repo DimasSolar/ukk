@@ -1,5 +1,5 @@
 <?php
-	include 'database.php';
+	include '../koneksi.php';
 
 	// proses insert data
 	if(isset($_POST['add'])){
@@ -58,94 +58,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>To Do List</title>
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	<style type="text/css">
-		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-		* {
-			padding:0;
-			margin:0;
-			box-sizing: border-box;
-		}
-		body {
-			font-family: 'Roboto', sans-serif;
-			background: #4e54c8;  /* fallback for old browsers */
-			background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
-			background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-		}
-		.container {
-			width: 590px;
-			height: 100vh;
-			margin:0 auto;
-		}
-		.header {
-			padding: 15px;
-			color: #fff;
-		}
-		.header .title {
-			display: flex;
-			align-items: center;
-			margin-bottom: 7px;
-		}
-		.header .title i {
-			font-size: 24px;
-			margin-right: 10px;
-		}
-		.header .title span {
-			font-size: 18px;
-		}
-		.header .description {
-			font-size: 13px;
-		}
-		.content {
-			padding: 15px;
-		}
-		.card {
-			background-color: #fff;
-			padding:15px;
-			border-radius: 5px;
-			margin-bottom: 10px;
-		}
-		.input-control {
-			width:100%;
-			display: block;
-			padding:0.5rem;
-			font-size: 1rem;
-			margin-bottom: 10px;
-		}
-		.text-right {
-			text-align: right;
-		}
-		button {
-			padding:0.5rem 1rem;
-			font-size: 1rem;
-			cursor: pointer;
-			background: #4e54c8;  /* fallback for old browsers */
-			background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
-			background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-			color: #fff;
-			border:1px solid;
-			border-radius: 3px;
-		}
-		.task-item {
-			display: flex;
-			justify-content: space-between;
-		}
-		.text-orange {
-			color: orange;
-		}
-		.text-red {
-			color: red;
-		}
-		.task-item.done span {
-			text-decoration: line-through;
-			color: #ccc;
-		}
-		@media (max-width: 768px){
-			.container {
-				width: 100%;
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 

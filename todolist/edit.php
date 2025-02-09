@@ -1,5 +1,5 @@
 <?php
-	include 'database.php';
+	include '../koneksi.php';
 
 	// select data yang akan diedit
 	$q_select = "select * from tasks where taskid = '".$_GET['id']."' ";
